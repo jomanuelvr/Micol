@@ -7,6 +7,12 @@ body {
   flex-direction: column;
 }
 
+.mapa {
+    max-width: 100%; /* La imagen no debe ser más ancha que su contenedor */
+    height: auto;    /* Mantiene la proporción original de la imagen */
+    display: block; 
+}
+
 @keyframes colorChange {
   0% {
     color: #939dff;
@@ -119,6 +125,7 @@ h2 {
   position: fixed;
   bottom: -20px;
   left: -20px;
+  z-index: 10000;
 }
 .blueGift img {
   width: 150px;
@@ -148,7 +155,6 @@ h2 {
 }
 .logo15 {
   width: 500px;
-  max-width: 75vw;
   height: auto;
 }
 .shadowEffect {

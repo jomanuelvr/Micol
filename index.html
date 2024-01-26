@@ -4,9 +4,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Tarjeta de Cumpleaños</title>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+
     <link rel="stylesheet" href="./styles/styles.css">
 </head>
 
@@ -61,6 +63,11 @@
     </div>
     <a href="#" data-bs-toggle="modal" data-bs-target="#modalRegalos" onclick="event.preventDefault();"
         class="blueGift"><img src="./images/regalitoAzul.gif" alt=""></a>
+        <div class="btnPosition">
+            <a id="exitFull" ><i class="fa-solid me-3 fa-minimize"></i></a>
+       <a id="playButton" ><i class="fa-solid fa-music"></i></a>
+</div>
+
         
     <main class="container text-center">
 
@@ -95,15 +102,32 @@
                 </div>
             </div>
         </section>
-        <div class="col-12 cardSaludo mb-5 container shadowEffect ">
+        <div class="cardSaludo mb-5 container shadowEffect ">
             <p class="my-3 px-3">Con la bendición de Dios y el amor de mi familia, me llena de felicidad este momento
                 crucial en mi vida: el día que dejo atrás la infancia para embarcarme en un nuevo viaje. Como parte
                 vital de mi vida, deseo que compartan conmigo la alegría de mis Quince Años.</p>
         </div>
-        <div class="btnPosition">
-            <a id="exitFull" ><i class="fa-solid me-3 fa-minimize"></i></a>
-       <a id="playButton" ><i class="fa-solid fa-music"></i></a>
-</div>
+        <h2 class="mb-4">Lugar</h2>
+
+        <div data-aos="fade-up" class="cardSaludo mb-5 pb-3 container shadowEffect ">
+            <div class="row">
+
+                <p class="my-3 col-12" >Salon tanto con imagen del mapita</p>
+                <img class="mapa col-12" src="./images/mapa.jpg" alt="">
+            </div>
+        </div>
+
+        <div  class="cardSaludo mb-5 container shadowEffect">
+            <div class="row justify-content-around">
+                <div data-aos="flip-left" class="col-5 d-flex align-items-center">
+                    <a><p>Regalos</p></a>
+                </div>
+                <div data-aos="flip-right" class="col-5 d-flex align-items-center">
+                    <a><p>Código de Vestimenta</p></a>
+                </div>
+
+            </div>
+        </div>
 
 
 
@@ -116,7 +140,7 @@
                         <h1 class="modal-title fs-5" id="modalInicialLabel">Invitación</h1>
                     </div>
                     <div class="modal-body">
-                        <img src="./images/Textologo15.png" class="logo15 " alt="logo del 15 con nombre y fecha">
+                        <img src="./images/Textologo15.png" class="logo15 img-fluid " alt="logo del 15 con nombre y fecha">
                     </div>
                     <div class="modal-footer">
                         <button type="button" id="sinMusica" class="btn mx-auto btn btn-outline-light" data-bs-dismiss="modal">Entrar
@@ -163,6 +187,10 @@
             modal.show();
         });
     </script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+      </script>
     <script src="./js/fullScreen.js"></script>
     <script src="../js/musicaInvitado.js"></script>
     <script src="./js/botonMusica.js"></script>
