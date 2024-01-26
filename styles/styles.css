@@ -7,7 +7,27 @@ body {
     flex-direction: column;
   }
   
+  @keyframes colorChange {
+    0% {
+        color: #939dff;
+    }
+    25% {
+        color: #7775ff;
+    }
+    50% {
+        color: #9900cc;
+    }
+    75% {
+        color: #7775ff;
+    }
+    100% {
+        color: #939dff;
+    }
+}
 
+#playButton i {
+    animation: colorChange 5s infinite;
+}
 
 .cardContador {
     background-color: rgb(245, 245, 245, 0.6);
