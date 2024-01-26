@@ -76,6 +76,7 @@ h2 {
   font-family: "Courgette", cursive;
   font-size: 30px;
   color: rgba(0, 74, 173);
+  z-index: 20;
 }
 .parrafosRegalo {
   font-family: "Courgette", cursive;
