@@ -7,33 +7,6 @@ body {
     flex-direction: column;
   }
   
-.contenedorPrincipal {
-    background-color: #050005;
-    
-    min-height: 100vh;
-    display: flex;
-    align-items: center;
-}
-
-.tx-1 {
-font-family: 'Anton', sans-serif;
-width: 100%;
-color: rgb(0, 0,0,10);
-text-align: center;
-text-transform: uppercase;
-font-size: calc(20vw);
-font-weight: bold;
-background-image: linear-gradient(45deg, rgba(5, 0, 5, 0.5) 0%, rgba(63, 0, 88, 0.5) 52%, rgba(0, 0, 0, 0.5) 100%), url(../images/fondoGif.gif);
-background-size: cover;
-background-position: center;
-background-clip: text;
--webkit-background-clip: text;
--webkit-text-fill-color: transparent;
-}
-.botonInvitado {
-    max-height: 200px;
-}
-
 
 
 .cardContador {
@@ -95,9 +68,11 @@ h2 {
     position: fixed;
     bottom: 0px; /* Ajusta la distancia desde la parte superior */
     right: 0px; /* Ajusta la distancia desde la derecha */
+    z-index: 700;
 }
 .flowersB img {
     max-height: 40vh; /* Establece el alto máximo al 25% del viewport height */
+    z-index: 700;
 }
 .flowersBLg {
     position: fixed;
@@ -106,6 +81,17 @@ h2 {
 }
 .flowersBLg img {
     max-height: 70vh; /* Establece el alto máximo al 25% del viewport height */
+}
+
+
+.btnPosition {
+    position: fixed;
+    top: 10px;
+    right: 10px;
+    font-size: 30px;
+    color: rgba(0, 74, 173, 0.7) ;
+
+
 }
 
 .logo15 {
@@ -136,6 +122,10 @@ main {
     background: #d6d6ff;
     overflow: hidden;
     z-index: -1;
+}
+
+.btnPosition {
+    z-index: 1000;
 }
 
 .background span {
