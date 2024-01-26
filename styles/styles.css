@@ -92,49 +92,54 @@ h2 {
   position: fixed;
   top: 0px;
   left: 0px;
+  z-index: 50;
 }
 .flowersTop img {
   max-height: 35vh;
-  z-index: 1000;
+  
 }
 .flowersTopMd {
   position: fixed;
   top: 0px;
   left: 0px;
+  z-index: 50;
 }
 .flowersTopMd img {
   max-height: 70vh;
-  z-index: 1000;
+  
 }
 .flowersB {
   position: fixed;
   bottom: 0px;
   right: 0px;
+  z-index: 50;
   
 }
 .flowersB img {
   max-height: 30vh;
-  z-index: 1000;
+  
 }
 .flowersBLg {
   position: fixed;
   bottom: 0px;
   right: 0px;
+  z-index: 50;
 }
 .flowersBLg img {
   max-height: 70vh;
-  z-index: 1000;
+  
 }
 
 .blueGift {
   position: fixed;
   bottom: -20px;
   left: -20px;
+  z-index: 50;
   
 }
 .blueGift img {
   width: 150px;
-  z-index: 1000;
+
 }
 
 .btnPosition {
@@ -142,7 +147,7 @@ h2 {
   top: 10px;
   right: 10px;
   font-size: 30px;
-  z-index: 1000;
+  z-index: 51;
 
 }
 
