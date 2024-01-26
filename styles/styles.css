@@ -74,7 +74,7 @@ h2 {
     left: 0px; /* Ajusta la distancia desde la derecha */
 }
 .flowersTop img {
-    max-height: 40vh; /* Establece el alto máximo al 25% del viewport height */
+    max-height: 35vh; /* Establece el alto máximo al 25% del viewport height */
 }
 .flowersTopMd {
     position: fixed;
@@ -91,7 +91,7 @@ h2 {
     z-index: 700;
 }
 .flowersB img {
-    max-height: 40vh; /* Establece el alto máximo al 25% del viewport height */
+    max-height: 30vh; /* Establece el alto máximo al 25% del viewport height */
     z-index: 700;
 }
 .flowersBLg {
