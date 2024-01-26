@@ -70,7 +70,7 @@ h2 {
     justify-content: center;
     border: 1px solid rgba(0, 74, 173, 0.3) ;
     font-family: 'Courgette', cursive;
-    font-size: clamp(16px, 4vw, 30px);
+    font-size: 30px;
     color: rgba(0, 74, 173) ;
 
 }
