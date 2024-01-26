@@ -70,39 +70,48 @@ h2 {
 
 .flowersTop {
     position: fixed;
-    top: 0px; /* Ajusta la distancia desde la parte superior */
-    left: 0px; /* Ajusta la distancia desde la derecha */
+    top: 0px; 
+    left: 0px; 
 }
 .flowersTop img {
-    max-height: 35vh; /* Establece el alto máximo al 25% del viewport height */
+    max-height: 35vh; 
 }
 .flowersTopMd {
     position: fixed;
-    top: 0px; /* Ajusta la distancia desde la parte superior */
-    left: 0px; /* Ajusta la distancia desde la derecha */
+    top: 0px; 
+    left: 0px; 
 }
 .flowersTopMd img {
-    max-height: 70vh; /* Establece el alto máximo al 25% del viewport height */
+    max-height: 70vh; 
 }
 .flowersB {
     position: fixed;
-    bottom: 0px; /* Ajusta la distancia desde la parte superior */
-    right: 0px; /* Ajusta la distancia desde la derecha */
+    bottom: 0px; 
+    right: 0px; 
     z-index: 700;
 }
 .flowersB img {
-    max-height: 30vh; /* Establece el alto máximo al 25% del viewport height */
+    max-height: 30vh; 
     z-index: 700;
 }
 .flowersBLg {
     position: fixed;
-    bottom: 0px; /* Ajusta la distancia desde la parte superior */
-    right: 0px; /* Ajusta la distancia desde la derecha */
+    bottom: 0px; 
+    right: 0px; 
 }
 .flowersBLg img {
-    max-height: 70vh; /* Establece el alto máximo al 25% del viewport height */
+    max-height: 70vh; 
 }
 
+.blueGift {
+    position: fixed;
+    bottom: -20px; 
+    left: -20px; 
+
+}
+.blueGift img {
+width: 150px;
+}
 
 .btnPosition {
     position: fixed;
@@ -116,8 +125,8 @@ h2 {
 
 .logo15 {
     width: 500px;
-    max-width: 75vw; /* Ancho máximo del 75% del viewport width */
-    height: auto; /* Mantiene la proporción de aspecto de la imagen */
+    max-width: 75vw; /
+    height: auto; 
 }
 .shadowEffect {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Sombra con desplazamiento x=0, y=4px, blur=8px, color RGBA(0, 0, 0, 0.1) */

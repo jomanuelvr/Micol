@@ -58,6 +58,7 @@
 <div class="flowersBLg d-none d-lg-block">
         <img src="../images/Flores abajo.png" alt="">
     </div>
+    <a href="#" data-bs-toggle="modal" data-bs-target="#modalInicial" onclick="event.preventDefault();" class="blueGift"><img src="./images/regalitoAzul.gif" alt=""></a>
   
     <main class="container text-center">
 
@@ -94,25 +95,28 @@
       <a id="playButton" class="btnPosition"><i class="fa-solid fa-music"></i></a>
       
 
+<!-- Button trigger modal -->
+<button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modalInicial">
+    Launch static backdrop modal
+  </button>
+  
   <!-- Modal -->
-  <div class="modal fade" id="modalInvitado" tabindex="-1" aria-labelledby="modalInvitadoLabel" aria-hidden="true">
-    <div class="modal-dialog">
+  <div class="modal fade" id="modalInicial" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="modalInicialLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
       <div class="modal-content">
         <div class="modal-header">
-          <h1 class="modal-title fs-5" id="modalInvitadoLabel">Modal title</h1>
+          <h1 class="modal-title fs-5" id="modalInicialLabel">Modal title</h1>
           <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
         </div>
         <div class="modal-body">
           ...
         </div>
         <div class="modal-footer">
-          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-          <button type="button" class="btn btn-primary">Save changes</button>
+          <button type="button" class="btn mx-auto btn-secondary" data-bs-dismiss="modal">Cerrar</button>
         </div>
       </div>
     </div>
   </div>
-
         <audio id="audio" loop>
             <source src="../media/norah.mp3" type="audio/mpeg">
         </audio>
