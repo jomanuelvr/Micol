@@ -52,8 +52,12 @@ h2 {
     color: rgba(0, 74, 173) ;
     text-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
     font-size: 36px;
-
-
+}
+.modal-title {
+    font-family: 'Courgette', cursive;
+    color: rgba(0, 74, 173) ;
+    text-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    font-size: 40px !important;
 }
 .cardSaludo {
     background-color: rgb(245, 245, 245, 0.6);
@@ -125,11 +129,24 @@ width: 150px;
 
 .logo15 {
     width: 500px;
-    max-width: 75vw; /
-    height: auto; 
+    max-width: 75vw;
+    height: auto;
 }
 .shadowEffect {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Sombra con desplazamiento x=0, y=4px, blur=8px, color RGBA(0, 0, 0, 0.1) */
+}
+
+.modal-content {
+    background-image: linear-gradient(0deg, #8EC5FC 0%, #fdfdfd 100%);
+    }
+/* Estilo personalizado para el fondo del modal específico */
+#modalIinicial.modal-backdrop {
+    background-color: rgba(0, 0, 0, 0.7) !important; /* Ajusta la opacidad según tus preferencias */
+}
+
+/* También puedes aplicar este estilo si deseas que el fondo del modal sea más oscuro cuando se abre */
+#modalInicial.fade.show {
+    background-color: rgba(0, 0, 0, 0.8) !important; /* Ajusta la opacidad según tus preferencias */
 }
 
 @keyframes move {
@@ -153,9 +170,6 @@ main {
     z-index: -1;
 }
 
-.btnPosition {
-    z-index: 1000;
-}
 
 .background span {
     width: 14vmin;
