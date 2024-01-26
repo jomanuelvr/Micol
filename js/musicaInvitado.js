@@ -1,12 +1,13 @@
-document.addEventListener('DOMContentLoaded', function() {
-    const audio = document.getElementById('audio');
-    const botonPlay = document.getElementById('playButton');
+document.getElementById('playButton').addEventListener('click', function() {
+    // Abre la ventana modal
+    var myModal = new bootstrap.Modal(document.getElementById('modalInvitado'));
+    myModal.show();
 
-    botonPlay.addEventListener('click', function() {
-        if (audio.paused) {
-            audio.play();
-        } else {
-            audio.pause();
-        }    });
+    // Resto del código para reproducir/pausar el audio
+    var audio = document.getElementById('audio');
+    if (audio.paused) {
+        audio.play();
+    } else {
+        audio.pause();
+    }
 });
-
