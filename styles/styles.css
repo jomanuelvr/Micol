@@ -9,7 +9,8 @@ body {
 
 .mapa {
     max-width: 100%; /* La imagen no debe ser más ancha que su contenedor */
-    height: auto;    /* Mantiene la proporción original de la imagen */
+    width: auto;
+    max-height: 300px;
     display: block; 
 }
 
@@ -136,6 +137,7 @@ h2 {
   top: 10px;
   right: 10px;
   font-size: 30px;
+  z-index: 1000;
 
 }
 
@@ -161,6 +163,10 @@ h2 {
 .logo15texto {
   width: 500px;
   height: auto;
+}
+
+.espacioFinal {
+    min-height: 130px;
 }
 .shadowEffect {
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Sombra con desplazamiento x=0, y=4px, blur=8px, color RGBA(0, 0, 0, 0.1) */
