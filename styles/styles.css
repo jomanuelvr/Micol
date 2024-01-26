@@ -94,6 +94,7 @@ h2 {
 }
 .flowersTop img {
   max-height: 35vh;
+  z-index: 700;
 }
 .flowersTopMd {
   position: fixed;
@@ -102,6 +103,7 @@ h2 {
 }
 .flowersTopMd img {
   max-height: 70vh;
+  z-index: 700;
 }
 .flowersB {
   position: fixed;
@@ -126,10 +128,11 @@ h2 {
   position: fixed;
   bottom: -20px;
   left: -20px;
-  z-index: 1000;
+  
 }
 .blueGift img {
   width: 150px;
+  z-index: 700;
 }
 
 .btnPosition {
