@@ -29,9 +29,7 @@ body {
     color: #939dff;
   }
 }
-#exitFull{
-    color: rgba(0, 74, 173);
-}
+
 #playButton i {
   animation: colorChange 5s infinite;
 }
