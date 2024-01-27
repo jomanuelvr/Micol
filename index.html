@@ -346,7 +346,14 @@
           </div>
         </div>
   </div>
-    
+    <script>
+    document.addEventListener("DOMContentLoaded", function () {
+        setTimeout(function () {
+            var mainContent = document.querySelector('main');
+            mainContent.classList.remove('d-none');
+        }, 3000);
+    });
+    </script>
     <script>
         document.addEventListener("DOMContentLoaded", function () {
             var modal = new bootstrap.Modal(document.getElementById('modalInicial'));
