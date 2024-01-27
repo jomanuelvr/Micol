@@ -79,14 +79,15 @@
 
     <main class="container text-center">
       <section class="row text-center mb-3 justify-content-center">
-        <div  data-aos-mirror="true" data-aos-once="false" data-aos="fade-up"  class="col-12 pb-2">
+        <div data-aos="fade-up"
+        data-aos-anchor-placement="top-center"  class="col-12 pb-2">
           <img  
             src="../images/logo15azul.png"
             class="logo15"
             alt="logo del 15 con nombre y fecha"
           />
         </div>
-        <h2 class="my-4">16 de febrero de 2024</h2>
+        <h2 data-aos="fade-right" class="my-4">16 de febrero de 2024</h2>
 
         <div
           class="cardContador shadowEffect col-4 d-flex flex-column align-items-center"
@@ -119,7 +120,7 @@
           </div>
         </div>
       </section>
-      <div class="cardSaludo mb-5 container shadowEffect">
+      <div class="cardSaludo mb-4 container shadowEffect">
         <p class="my-3 px-3">
           Con la bendición de Dios y el amor de mi familia, me llena de
           felicidad este momento crucial en mi vida: el día que dejo atrás la
@@ -127,11 +128,11 @@
           vida, deseo que compartan conmigo la alegría de mis Quince Años.
         </p>
       </div>
-      <h2 class="mb-4">¿En dónde nos encontraremos?</h2>
+      <h2  data-aos="fade-left" class="mb-4">¿En dónde nos encontraremos?</h2>
 
       <div
         data-aos="fade-up"
-        class="cardSaludo mb-5 pb-3 container shadowEffect"
+        class="cardSaludo mb-4 pb-3 container shadowEffect"
       >
         <div class="row justify-content-center">
           <h2 class="my-3 col-12">Salon Franchesca</h2>
@@ -151,19 +152,25 @@
         </div>
       </div>
 
-      <div class="cardSaludo mb-5 container shadowEffect">
+      <div data-aos="zoom-in-left" class="cardLinks py-3 mb-4 container shadowEffect">
         <div class="row justify-content-around">
-          <div data-aos="flip-left" class="col-5 d-flex align-items-center">
+          <div  class="col-12 col-md-5">
             <a
               href="#"
               class="textLinks"
               data-bs-toggle="modal"
               data-bs-target="#modalRegalos"
               onclick="event.preventDefault();"
-              >Regalos</a
+              ><i class="fa-solid fa-gifts"></i> Regalos <i class="fa-solid fa-gifts"></i></a
             >
           </div>
-          <div data-aos="flip-right" class="col-5 d-flex align-items-center">
+          
+        </div>
+      </div>
+      <div data-aos="zoom-in-right" class="cardLinks py-3 mb-4 container shadowEffect">
+        <div class="row justify-content-around">
+          
+          <div  class="col-12 col-md-5">
             <a
               href="#"
               class="textLinks"
@@ -175,6 +182,23 @@
           </div>
         </div>
       </div>
+      <h2 data-aos="fade-right" class="mb-4">Si recibiste esta invitacion es importante que confirmes tu asistencia.</h2>
+      <div data-aos="flip-right" class="cardLinks py-3 mb-4 container shadowEffect ">
+        <div class="row justify-content-around">
+          
+          <div data-aos="zoom-in-left" class="col-12 col-md-5">
+            <a
+              href="#"
+              class="textLinks"
+              data-bs-toggle="modal"
+              data-bs-target="#modalAsistencia"
+              onclick="event.preventDefault();"
+              >Confirma aquí</a
+            >
+          </div>
+        </div>
+      </div>
+
       <div class="espacioFinal"></div>
 
       <!-- Modal inicial-->
@@ -208,7 +232,7 @@
                 class="btn mx-auto btn btn-outline-light"
                 data-bs-dismiss="modal"
               >
-                Entrar sin música
+                Entrar sin Música
               </button>
               <button
                 type="button"
@@ -216,7 +240,7 @@
                 data-bs-dismiss="modal"
                 id="controlButton"
               >
-                Entrar con música
+                Entrar con Música
               </button>
             </div>
           </div>
@@ -295,18 +319,37 @@
         </div>
     </div>
 </div>
+<!-- Modal Asistencia -->
+<div class="modal fade modal-with-background" id="modalAsistencia" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="modalAsistenciaLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+          <div class="modal-header py-5 justify-content-center">
+          </div>
+          <section class="modal-body">
+              <article>
+                  <p class="parrafosRegalo">Antes de confirmar tu asistencia, me encantaría que tengas en cuenta el nombre completo de los demás invitados que te acompañarán, especialmente si se trata de una invitación grupal. Tu atención a este detalle es fundamental para asegurar que todos disfrutemos juntos de esta ocasión especial.</p>
+                  <p class="parrafosRegalo">¡Espero verte pronto!</p>
+              </article>
+              <div class="modal-footer">
+                <a href="https://wa.me/543816134483?text=%C2%A1Hola!%0ATe%20escribo%20para%20confirmar%20mi%20asistencia%20al%20cumple%20de%20Micol.%20" target="_blank" class="btn m-auto btn-light">Confirmar</a>
+                <button type="button" class="btn m-auto btn-light" data-bs-dismiss="modal">Volver</button>
+              </div>
+          </section>
+      </div>
+  </div>
+</div>
 
 
       <audio id="audio" loop>
         <source src="../media/norah.mp3" type="audio/mpeg" />
       </audio>
     </main>
-    <script>
+    <!-- <script>
         document.addEventListener("DOMContentLoaded", function () {
             var modal = new bootstrap.Modal(document.getElementById('modalInicial'));
             modal.show();
         });
-    </script>
+    </script> -->
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
 AOS.init();

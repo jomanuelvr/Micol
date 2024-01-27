@@ -76,6 +76,17 @@ h2 {
   color: rgba(0, 74, 173);
   z-index: 20;
 }
+
+.cardLinks {
+  background-color: rgb(245, 245, 245, 0.6);
+  border-radius: 10px;
+  border: 1px solid rgba(0, 74, 173, 0.3);
+  font-family: "Courgette", cursive;
+  font-size: 30px;
+  color: rgba(0, 74, 173);
+  z-index: 20;
+}
+
 .parrafosRegalo {
   font-family: "Courgette", cursive;
   color: rgba(0, 74, 173);
@@ -176,15 +187,15 @@ h2 {
 }
 
 .espacioFinal {
-    min-height: 130px;
+    min-height: 110px;
 }
 .shadowEffect {
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Sombra con desplazamiento x=0, y=4px, blur=8px, color RGBA(0, 0, 0, 0.1) */
 }
 
 .reflejo {
-  -webkit-box-reflect: below 2px
-    linear-gradient(transparent, rgba(7, 9, 179, 0.7));
+  -webkit-box-reflect: below 0px
+    linear-gradient(transparent, rgba(7, 9, 179, 0.8));
 }
 
 .modal-content {
@@ -255,6 +266,21 @@ main {
 
 .adressText {
   font-size: 20px;
+}
+
+/* Estilos para el fondo del header del modal */
+#modalAsistencia.modal-with-background .modal-header {
+  background-image: url('../images/sobres.jpeg'); /* Ruta de tu imagen */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  
+  color: #fff; /* Color del texto para asegurar contraste */
+}
+
+/* Ajustes adicionales para el contenido del modal */
+#modalAsistencia.modal-with-background .modal-title {
+  color: #fff; /* Color del texto del título del modal */
 }
 
 
