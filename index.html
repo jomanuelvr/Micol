@@ -51,6 +51,7 @@
       <span></span>
       <span></span>
     </div>
+    <main class="container text-center" hidden>
     <div class="flowersTop d-lg-none">
       <img src="../images/Flores arriba.png" alt="" />
     </div>
@@ -77,7 +78,7 @@
       <a id="playButton"><i class="fa-solid fa-music"></i></a>
     </div>
 
-    <main class="container text-center">
+    
       <section class="row text-center mb-3 justify-content-center">
         <div class="col-12 pb-2">
           <img  
@@ -201,51 +202,7 @@
 
       <div class="espacioFinal"></div>
 
-      <!-- Modal inicial-->
-      <div
-        class="modal fade"
-        id="modalInicial"
-        data-bs-backdrop="static"
-        data-bs-keyboard="false"
-        tabindex="-1"
-        aria-labelledby="modalInicialLabel"
-        aria-hidden="true"
-      >
-        <div class="modal-dialog modal-dialog-centered">
-          <div class="modal-content">
-            <div class="modal-header justify-content-center">
-              <h1 class="modal-title fs-5" id="modalInicialLabel">
-                Invitación
-              </h1>
-            </div>
-            <div class="modal-body">
-              <img
-                src="./images/Textologo15.png"
-                class="logo15texto img-fluid"
-                alt="logo del 15 con nombre y fecha"
-              />
-            </div>
-            <div class="modal-footer">
-              <button
-                type="button"
-                id="sinMusica"
-                class="btn mx-auto btn-light"
-                data-bs-dismiss="modal"
-              >
-                Entrar sin Música
-              </button>
-              <button
-                type="button"
-                class="btn mx-auto btn-light"
-                data-bs-dismiss="modal"
-                id="controlButton"
-              >
-                Entrar con Música
-              </button>
-            </div>
-          </div>
-        </div>
-      </div>
+      
 <!-- Modal Regalos-->
 <div class="modal fade" id="modalRegalos" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="modalRegalosLabel" aria-hidden="true">
     <div class="modal-dialog modal-dialog-centered">
@@ -344,6 +301,59 @@
         <source src="../media/norah.mp3" type="audio/mpeg" />
       </audio>
     </main>
+        <!-- Modal inicial-->
+      <div
+        class="modal fade"
+        id="modalInicial"
+        data-bs-backdrop="static"
+        data-bs-keyboard="false"
+        tabindex="-1"
+        aria-labelledby="modalInicialLabel"
+        aria-hidden="true"
+      >
+        <div class="modal-dialog modal-dialog-centered">
+          <div class="modal-content">
+            <div class="modal-header justify-content-center">
+              <h1 class="modal-title fs-5" id="modalInicialLabel">
+                Invitación
+              </h1>
+            </div>
+            <div class="modal-body">
+              <img
+                src="./images/Textologo15.png"
+                class="logo15texto img-fluid"
+                alt="logo del 15 con nombre y fecha"
+              />
+            </div>
+            <div class="modal-footer">
+              <button
+                type="button"
+                id="sinMusica"
+                class="btn mx-auto btn-light"
+                data-bs-dismiss="modal"
+              >
+                Entrar sin Música
+              </button>
+              <button
+                type="button"
+                class="btn mx-auto btn-light"
+                data-bs-dismiss="modal"
+                id="controlButton"
+              >
+                Entrar con Música
+              </button>
+            </div>
+          </div>
+        </div>
+  </div>
+    <script>
+    document.addEventListener("DOMContentLoaded", function () {
+        setTimeout(function () {
+            var mainContent = document.querySelector('main');
+            mainContent.removeAttribute('hidden');
+        }, 2000);
+    });
+    </script>
     <script>
         document.addEventListener("DOMContentLoaded", function () {
             var modal = new bootstrap.Modal(document.getElementById('modalInicial'));
