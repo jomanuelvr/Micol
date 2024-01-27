@@ -8,10 +8,8 @@ body {
 }
 
 .mapa {
-    max-width: 100%; /* La imagen no debe ser más ancha que su contenedor */
-    width: auto;
-    max-height: 300px;
-    display: block; 
+    border-radius: 20px !important;
+
 }
 
 @keyframes colorChange {
@@ -219,6 +217,45 @@ h2 {
 main {
   padding-top: 10vh;
 }
+
+
+.textLinks {
+  position: relative;
+  text-decoration: none; 
+  color: rgba(0, 74, 173);
+  transition: color 0.3s ease, border-bottom 0.3s ease;
+}
+
+/* Pseudo-elemento ::before para el subrayado */
+.textLinks::before {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: rgba(0, 74, 173);
+  transform: scaleX(0);
+  transition: all 0.3s ease;
+}
+
+/* Estilo al pasar el mouse por encima */
+.textLinks:hover {
+  color: rgba(0, 74, 173);
+  /* font-weight: bold; Cambia el peso de la fuente a "negrita" al pasar el mouse */
+}
+
+/* Estilo del subrayado al pasar el mouse por encima */
+.textLinks:hover::before {
+  visibility: visible;
+  transform: scaleX(1); /* Añade el subrayado al pasar el mouse */
+}
+
+.adressText {
+  font-size: 20px;
+}
+
+
 
 .background {
   position: fixed;
