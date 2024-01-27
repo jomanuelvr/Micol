@@ -51,7 +51,7 @@
       <span></span>
       <span></span>
     </div>
-    <main class="container text-center" hidden>
+    <main class="container text-center d-none">
     <div class="flowersTop d-lg-none">
       <img src="../images/Flores arriba.png" alt="" />
     </div>
@@ -346,14 +346,7 @@
           </div>
         </div>
   </div>
-    <script>
-    document.addEventListener("DOMContentLoaded", function () {
-        setTimeout(function () {
-            var mainContent = document.querySelector('main');
-            mainContent.removeAttribute('hidden');
-        }, 2000);
-    });
-    </script>
+    
     <script>
         document.addEventListener("DOMContentLoaded", function () {
             var modal = new bootstrap.Modal(document.getElementById('modalInicial'));
